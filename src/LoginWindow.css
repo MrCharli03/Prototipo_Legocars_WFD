@@ -1,0 +1,29 @@
+.login-container {
+    background-color: white;
+    padding: 100px;
+    border: 2px solid black; /* Agregar borde negro */
+    border-radius: 8px; /* Si deseas esquinas redondeadas */
+  }
+  
+  /* Estilos para los elementos internos */
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container form > * {
+    margin-bottom: 16px; /* Agregar espacio entre elementos */
+  }
+  
+div {
+    border-radius: 10px 10px 15px 15px / 10px 10px 15px 15px;
+  }
+
+  .formContainer {
+    margin-top: 0px;
+  }
+  
+  .inputField {
+    margin-bottom: 20px;
+  }
+  

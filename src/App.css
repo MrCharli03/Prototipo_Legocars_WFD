@@ -1,0 +1,11 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.contenido {
+  border: 2px solid black; /* Ancho de borde 2px y color negro */
+}

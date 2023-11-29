@@ -11,7 +11,6 @@ const LoginWindow = ({ onLogin }) => {
     e.preventDefault();
     // Lógica de inicio de sesión...
     onLogin();
-    alert(`Bienvenido a legocar`);
   };
 
   useEffect(() => {
@@ -39,8 +38,10 @@ const LoginWindow = ({ onLogin }) => {
       const profile = googleUser.getBasicProfile();
       const email = profile.getEmail();
       // Realizar lógica de inicio de sesión con el email de Google
-      alert(`Iniciaste sesión con Google como: ${email}`);
+      //alert(`Iniciaste sesión con Google como: ${email}`);
+      //onLogin();
     });
+    onLogin();
   };
 
   return (

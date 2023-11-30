@@ -14,11 +14,19 @@ const MyCalendar = () => (
 const Home = () => {
   
   return (
-    <div>
+    <div className='father'>
       <NavBar/>
-      <Stack horizontalAlign="center">
-        <MyCalendar/>
-      </Stack>
+      <div >
+        <div className='left'>
+
+        </div>
+        <div className='center'>
+          <MyCalendar/>
+        </div>
+        <div className='right'>
+
+        </div>
+      </div>
       <Footer/>
     </div>
   );

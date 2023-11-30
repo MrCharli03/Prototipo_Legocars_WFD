@@ -1,0 +1,17 @@
+.Footer_container {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.left {
+    width: 20%;
+  }
+
+.right {
+   width: 60%;
+}
+
+.center{
+    width: 20%;
+}

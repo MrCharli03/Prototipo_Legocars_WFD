@@ -15,11 +15,11 @@ function App() {
   };
 
   return (
-    <div className="App" style={{ backgroundColor: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+    <div>
         {!isLoggedIn ? (
-          <div>
+          <div className="App">
             <img src={legoCarImage} alt="Lego Car" style={{ width: '25%', height: '25%' }} />
-            <h1 style={{ color: 'black', margin: '10px 0' }}>Legocar</h1>
+            <h1 style={{ color: 'black', margin: '10px' }}>Legocar</h1>
             <div className="contenido">
               <LoginWindow onLogin={handleLogin} />
             </div>

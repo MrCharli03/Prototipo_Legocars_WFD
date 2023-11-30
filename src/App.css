@@ -1,6 +1,6 @@
 #root {
-  max-width: 1280px;
-  max-height: 1920px;
+  max-width: 1920px;
+  max-height: 1080px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -9,5 +9,5 @@
 
 .contenido {
   border: 2px solid black; /* Ancho de borde 2px y color negro */
-  
+  place-items: center;
 }

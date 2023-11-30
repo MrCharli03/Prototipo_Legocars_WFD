@@ -1,0 +1,22 @@
+/* index.css or your CSS file */
+.searchBarContainer {
+    width: 1080px; /* Set your desired width */
+    margin: -0px 0px ; /* This will horizontally center the search bar */
+    /* Add any other styles specific to your SearchBar */
+  }
+
+
+  
+.text-with-logo {
+    margin-left: 30px; /* Ajusta el valor según tus necesidades */
+    width: 100px ;
+}
+
+.profile {
+    margin-right: 30px;
+}
+
+.cajaBuscar {
+    position: relative;
+    left: 20px;
+}

@@ -2,11 +2,12 @@ import React from 'react';
 import { Calendar, DayOfWeek } from '@fluentui/react';
 import { SearchBox } from '@fluentui/react';
 import { Image, ImageFit } from '@fluentui/react';
-import TopHome from './TopHome';
+import NavBar from './NavBar';
 
 const MyCalendar = () => (
   <Calendar showMonthPickerAsOverlay
-  highlightSelectedMonth/>
+  highlightSelectedMonth
+  showGoToToday={false} styles={{}}/>
 );
 
 
@@ -15,8 +16,8 @@ const Home = () => {
 
   return (
     <div>
-      <TopHome/>
-      <MyCalendar />
+      <NavBar/>
+      <MyCalendar/>
     </div>
   );
 };

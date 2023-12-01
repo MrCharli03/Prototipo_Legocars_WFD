@@ -1,0 +1,21 @@
+.padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10%;
+}
+
+.boton{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 89%;
+    width: 10%;
+}
+
+.ranking{
+    border: 1px solid #ccc; /* Agregar borde */
+    border-radius: 10px; /* Hacer esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    width: 50%
+}

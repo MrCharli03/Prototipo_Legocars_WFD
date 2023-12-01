@@ -130,7 +130,7 @@ function Home () {
           <MyCalendar/>
         </div>
         <div className='rightC roundedBox1'>
-        <Stack tokens={{ childrenGap: 20 }}>
+          <Stack tokens={{ childrenGap: 20 }}>
             <Text variant="large">Mis Reservas</Text>
             <div className="notificationListContainer">
               <List items={resrevas} onRenderCell={_onRenderCell} />

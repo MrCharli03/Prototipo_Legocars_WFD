@@ -1,6 +1,6 @@
 .father {
     display: flex;
-    justify-content: center; /* Para distribuir el espacio de manera uniforme */
+    justify-content: space-between; /* Para distribuir el espacio de manera uniforme */
     margin-top: 40px;
     margin-bottom: 40px;
   }
@@ -16,4 +16,11 @@
     width: 33%;
     align-items: center;
     justify-content: center;
+  }
+
+  .notificationListContainer {
+    max-height: 300px; /* Altura máxima para mostrar el scroll */
+    overflow-y: auto; /* Añadir scroll vertical si el contenido excede la altura máxima */
+    scrollbar-width: thin; /* Ancho del scrollbar en navegadores que lo soporten */
+    scrollbar-color: #888888 #f0f0f0; /* Color del scrollbar (barra, fondo) */
   }

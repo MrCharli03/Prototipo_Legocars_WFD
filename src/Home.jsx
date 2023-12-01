@@ -1,30 +1,33 @@
 import React from 'react';
-import { Calendar, DayOfWeek, Stack} from '@fluentui/react';
+import { Calendar, DayOfWeek, Stack, Text, defaultCalendarStrings} from '@fluentui/react';
 import NavBar from './NavBar';
 import Footer from './Footer';
+import './Home.css';
 //import CommandBar from './CommandBar';
 
+
+
 const MyCalendar = () => (
-  <Calendar showMonthPickerAsOverlay
-  highlightSelectedMonth
-  showGoToToday={false} styles={{}}/>
+  <Calendar
+        showGoToToday
+        strings={defaultCalendarStrings}/>
 );
 
 
 const Home = () => {
   
   return (
-    <div className='father'>
+    <div>
       <NavBar/>
-      <div >
-        <div className='left'>
-
+      <div className='father'>
+        <div className='leftC'>
+          <Text>Primera columna</Text>
         </div>
-        <div className='center'>
+        <div className='centerC'>
           <MyCalendar/>
         </div>
-        <div className='right'>
-
+        <div className='rightC'>
+          <Text>Tercera columna</Text>
         </div>
       </div>
       <Footer/>

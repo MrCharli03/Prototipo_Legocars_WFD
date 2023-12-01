@@ -10,7 +10,7 @@ import './NavBar.css';
 const MyLogo = ({ imageUrl }) => (
  <div className="text-with-logo" style={{ display: 'flex', alignItems: 'center' }}>
     <img src={imageUrl} alt="Logo" className="logo" style={{ width: '50px', height: '50px' }} />
-    <h3 style={{ color: 'black', marginLeft: '10px' }}>LegoCars</h3>
+    <h3 style={{ color: 'white', marginLeft: '10px' }}>LegoCars</h3>
  </div>
 );
 
@@ -36,7 +36,7 @@ const TopHome = () => {
  const imageUrl = avatar;
 
  return (
-    <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', backgroundColor: 'green' }}>
+    <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#1B340C' }}>
       <MyLogo imageUrl={legoCarImage} />
       <SearchBar />
       <Campana imageUrl={campana} />

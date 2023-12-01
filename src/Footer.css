@@ -6,12 +6,33 @@
 
 .left {
     width: 20%;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 .right {
-   width: 60%;
+   width: 45%;
 }
 
 .center{
     width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.parrafo {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bottom {
+    width: 15%;
+    text-align: left;
+    display: inline-block;
+    margin-top: auto;
+    bottom: 0;
+    right: 0;
 }

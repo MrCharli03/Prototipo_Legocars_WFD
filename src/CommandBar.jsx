@@ -1,36 +1,57 @@
 import * as React from 'react';
-import { CommandBar} from '@fluentui/react/lib/CommandBar';
+import { DefaultButton } from '@fluentui/react/lib/Button';
+import './CommandBar.css';
 
+const CommandBar = ({ onRanking }) => {
 
-const CommandBar = () => {
-    return (
-      //create a command bar with 3 buttons on the middle
-        <CommandBar
-            items={[
-            {
-                key: 'newItem',
-                text: 'Item nuevo',
-                iconProps: { iconName: 'Add' },
-                href: 'https://www.google.com',
-            },
-            {
-                key: 'upload',
-                text: 'Subir',
-                iconProps: { iconName: 'Upload' },
-                href: 'https://www.google.com',
-            },
-            {
-                key: 'share',
-                text: 'Compartir',
-                iconProps: { iconName: 'Share' },
-                onClick: () => console.log('Share'),
-            },
-            ]}
-            ariaLabel="Use left and right arrow keys to navigate between commands"
-        />
-    );
+    const handleSubmit = (e) => {
+        onRanking();
+    }
+
+  const buttonStyles = {
+    root: {
+      backgroundColor: '#1B340C',
+      color: 'white',
+      border: '1px solid black',
+      marginRight: '10px',
+      borderRadius: '5px', // Añadido para esquinas redondeadas
+    },
   };
-  
-  export default CommandBar; 
 
+  return (
+    <div className='boxBoutton'>
+      <DefaultButton
+        type="submit"
+        styles={buttonStyles}
+        className="inputField"
+        onClick={handleSubmit}
+      >
+        Ranking
+      </DefaultButton>
+      <DefaultButton
+        type="submit"
+        styles={buttonStyles}
+        className="inputField"
+      >
+        Mi equipo
+      </DefaultButton>
+      <DefaultButton
+        type="submit"
+        styles={buttonStyles}
+        className="inputField"
+      >
+        Reservar Circuito
+      </DefaultButton>
+      <DefaultButton
+        type="submit"
+        styles={buttonStyles}
+        className="inputField"
+      >
+        Designar Tripulacion,
+      </DefaultButton>
 
+    </div>
+  );
+};
+
+export default CommandBar;

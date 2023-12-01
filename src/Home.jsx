@@ -1,9 +1,11 @@
-import React from 'react';
-import { Calendar, DayOfWeek, Stack, Text, defaultCalendarStrings, List, mergeStyles } from '@fluentui/react';
+import React, { useState } from 'react';
+import { Calendar, Stack, Text, defaultCalendarStrings, List, mergeStyles } from '@fluentui/react';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import './Home.css';
-//import CommandBar from './CommandBar';
+import { initializeIcons } from '@fluentui/react/lib/Icons';
+import CommandBar from './CommandBar';
+import Ranking from './Ranking'
 
 const notificationItems = [
   {
@@ -64,20 +66,58 @@ const resrevas = [
     header: 'Reserva 3',
     content: 'Contenido de la reserva 3',
   },
+  {
+    key: '4',
+    header: 'Reserva 4',
+    content: 'Contenido de la reserva 4',
+  },
+  {
+    key: '5',
+    header: 'Reserva 4',
+    content: 'Contenido de la reserva 4',
+  },
+  {
+    key: '6',
+    header: 'Reserva 4',
+    content: 'Contenido de la reserva 4',
+  },
+  {
+    key: '7',
+    header: 'Reserva 4',
+    content: 'Contenido de la reserva 4',
+  },
+  {
+    key: '8',
+    header: 'Reserva 4',
+    content: 'Contenido de la reserva 4',
+  },
 ];
 
 
 const MyCalendar = () => (
-  <Calendar showGoToToday strings={defaultCalendarStrings} />
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <Calendar showGoToToday strings={defaultCalendarStrings} />
+  </div>
 );
 
-const Home = () => {
-  
+function Home () {
+  const [isRanking, setIsRanking] = useState(false);
+
+  const handleRanking = () => {
+    setIsRanking(true);
+  }
+
+  const handleBackToHome = () => {
+    setIsRanking(false); // Cambia el estado para volver a la página Home.jsx
+  };
+
   return (
     <div>
       <NavBar/>
+      <CommandBar onRanking={handleRanking}/>
+      {!isRanking ? (
       <div className='father'>
-        <div className='leftC'>
+        <div className='leftC roundedBox1' >
           <Stack tokens={{ childrenGap: 20 }}>
             <Text variant="large">Notificaciones</Text>
             <div className="notificationListContainer">
@@ -85,11 +125,11 @@ const Home = () => {
             </div>
           </Stack>
         </div>
-        <div className='centerC'>
+        <div className='centerC roundedBox1'>
           <Text variant="large">Calendario</Text>
           <MyCalendar/>
         </div>
-        <div className='rightC'>
+        <div className='rightC roundedBox1'>
         <Stack tokens={{ childrenGap: 20 }}>
             <Text variant="large">Mis Reservas</Text>
             <div className="notificationListContainer">
@@ -97,17 +137,29 @@ const Home = () => {
             </div>
           </Stack>
         </div>
-      </div>
+      </div >
+      ) : (
+        <Ranking onBack={handleBackToHome} />
+      )}
       <Footer/>
     </div>
   );
 };
 
 const _onRenderCell = (item) => {
+  const listItemStyles = {
+    padding: 10,
+    border: '1px solid #ccc',
+    borderRadius: 8,
+    marginBottom: 10,
+  };
+
   return (
-    <div className={mergeStyles({ padding: 10 })}>
+    <div className={mergeStyles(listItemStyles)}>
       <Text variant="mediumPlus">{item.header}</Text>
-      <Text variant="small">{item.content}</Text>
+      <div style={{ marginTop: 5 }}>
+        <Text variant="small">{item.content}</Text>
+      </div>
     </div>
   );
 };

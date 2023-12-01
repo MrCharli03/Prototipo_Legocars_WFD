@@ -12,8 +12,12 @@ const options = [
   { key: 'D', text: 'Frances' },
 ];
 
+const footerContainerStyles = {
+  border: '1px solid #ccc',
+};
+
 const ComboBoxInlineExample=()=>(
-  <div>
+  <div style={footerContainerStyles}>
       <ComboBox
         defaultSelectedKey="C"
         options={options}

@@ -1,19 +1,19 @@
 .father {
     display: flex;
     justify-content: space-between; /* Para distribuir el espacio de manera uniforme */
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   
   .leftC,
   .rightC {
     /* Añade estilos específicos para cada columna si es necesario */
     /* Por ejemplo, podrías establecer un ancho máximo para cada columna */
-    width: 33%; /* Esto es solo un ejemplo, ajusta según tus necesidades */
+    width: 25%; /* Esto es solo un ejemplo, ajusta según tus necesidades */
   }
   
   .centerC{
-    width: 33%;
+    width: 40%;
     align-items: center;
     justify-content: center;
   }
@@ -24,3 +24,31 @@
     scrollbar-width: thin; /* Ancho del scrollbar en navegadores que lo soporten */
     scrollbar-color: #888888 #f0f0f0; /* Color del scrollbar (barra, fondo) */
   }
+
+  .roundedBox {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .roundedBox1 {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .boxBoutton {
+    border: 1px solid #D1C37E;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #D1C37E;
+    border-radius: 0;
+  }
+
+  .inputField {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+    

@@ -47,7 +47,7 @@ const CommandBar = ({ onRanking }) => {
         styles={buttonStyles}
         className="inputField"
       >
-        Designar Tripulacion,
+        Designar Tripulacion
       </DefaultButton>
 
     </div>

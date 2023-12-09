@@ -7,7 +7,7 @@ import './Footer.css'
 
 const options = [
   { key: 'A', text: 'Ingles' },
-  { key: 'B', text: 'Esukero' },
+  { key: 'B', text: 'Esukera' },
   { key: 'C', text: 'Español' },
   { key: 'D', text: 'Frances' },
 ];
